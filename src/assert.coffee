@@ -11,8 +11,13 @@ module.exports = (invariant, meta) ->
   if isConstructor meta, Function
     meta = meta()
 
-  if isConstructor meta, Object
+  if isConstructor meta, String
+    reason = meta
+    meta = {}
+
+  else if isConstructor meta, Object
     reason = steal meta, "reason"
+
   else meta = {}
 
   error = Error reason or "Assertion failed."
