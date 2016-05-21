@@ -1,10 +1,8 @@
-var isConstructor, steal, throwFailure;
+var isConstructor, throwFailure;
 
 throwFailure = require("failure").throwFailure;
 
 isConstructor = require("isConstructor");
-
-steal = require("steal");
 
 module.exports = function(invariant, meta) {
   var error, reason;
@@ -18,7 +16,8 @@ module.exports = function(invariant, meta) {
     reason = meta;
     meta = {};
   } else if (isConstructor(meta, Object)) {
-    reason = steal(meta, "reason");
+    reason = meta.reason;
+    delete meta.reason;
   } else {
     meta = {};
   }

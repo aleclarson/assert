@@ -2,7 +2,6 @@
 { throwFailure } = require "failure"
 
 isConstructor = require "isConstructor"
-steal = require "steal"
 
 module.exports = (invariant, meta) ->
 
@@ -16,7 +15,8 @@ module.exports = (invariant, meta) ->
     meta = {}
 
   else if isConstructor meta, Object
-    reason = steal meta, "reason"
+    reason = meta.reason
+    delete meta.reason
 
   else meta = {}
 

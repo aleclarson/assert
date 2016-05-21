@@ -4,8 +4,7 @@
   "main": "js/src/assert",
   "dependencies": {
     "failure": "aleclarson/failure#1.0.0",
-    "isConstructor": "aleclarson/isConstructor#1.0.0",
-    "steal": "aleclarson/steal#1.0.0"
+    "isConstructor": "aleclarson/isConstructor#1.0.0"
   },
   "lotus": {
     "plugins": [
