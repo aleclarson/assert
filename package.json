@@ -2,10 +2,6 @@
   "name": "assert",
   "version": "1.0.0",
   "main": "js/src/assert",
-  "dependencies": {
-    "failure": "aleclarson/failure#1.0.0",
-    "isConstructor": "aleclarson/isConstructor#1.0.0"
-  },
   "lotus": {
     "plugins": [
       "lotus-coffee"
