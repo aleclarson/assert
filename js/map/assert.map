@@ -1,0 +1,10 @@
+{
+  "version": 3,
+  "file": "assert.js",
+  "sourceRoot": "../../src",
+  "sources": [
+    "assert.coffee"
+  ],
+  "names": [],
+  "mappings": "AACA,MAAM,CAAC,OAAP,GAAiB,SAAC,SAAD,EAAY,MAAZ;EACf,IAAU,SAAV;AAAA,WAAA;;EACA,IAAG,OAAO,MAAP,KAAmB,QAAtB;IACE,MAAA,GAAS,oBADX;;AAEA,QAAM,KAAA,CAAM,MAAN;AAJS"
+}
