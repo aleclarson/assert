@@ -1,10 +1,5 @@
 {
   "name": "assert",
   "version": "1.0.0",
-  "main": "js/assert",
-  "lotus": {
-    "plugins": [
-      "lotus-coffee"
-    ]
-  }
+  "main": "assert.js"
 }
